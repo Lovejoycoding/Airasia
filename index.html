@@ -7,96 +7,136 @@
     <title>Document</title>
 </head>
 <style>
-    @media only screen and (max-width: 960px) {
-        .header {
-            max-width: 100%;
-        }
-      .header-logo{
-        max-width: 100px;
-      }
-      
-    }
-    @media only screen and (max-width: 660px) {
-      .header-logo{
-        max-width: 100px;
-      }
-      table.header tr{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center ;
-            text-align: center;
-        }
-    }
-    @media only screen and (max-width: 350px) {
-        table.header tr{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center ;
-            text-align: center;
-        }
-    img.header-logo{
-       max-width: 100px;
-      }
-    .header-p{
-        font-size: 25px;
-      }
-      .gif{
-        max-width: 100%;
-      }
-  
-    }
-  </style>
+@media only screen and (min-width: 960px) {
+   .head{
+    width: 100%;
+   }
+   .container{
+    max-width: 960px;
+   }
+   
+ }
+ @media only screen and (max-width: 960px) {
+  .head{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+   .container{
+    max-width: 600px;
+    margin: 0 auto;
+   }
+ }
+ @media only screen and (max-width: 600px) {
+   
+   .container{
+    width: 100%;
+   }
+   .logo{
+    display: flex;
+    flex-direction: column;
+   }
+   img.header-logo{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   }
+   .header-p{
+    flex-direction: column;
+    margin: 8px auto;
+    font-size: 18px !important;
+   }
+   .gif-container{
+    max-width: 600px !important; 
+   }
+   img.gif{
+    max-width: 100% !important;    
+}
+.book-period{
+    font-size: 14px !important;
+    padding: 10px;
+}
+.book-travel{
+    font-size: 14px !important;
+    padding: 10px;
+}
+p.btn-red{
+    padding: 5px !important;
+}
+.btns{
+    max-width: 600px;
+}
+.book-p{
+    font-size: 11px;
+    font-size: 11px !important;
+    padding: 10px;
+    line-height: 1.5;
+}
+ img.btns-footer{
+    max-width: 100%;
+ }
+ tr.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+ }
+ .footer-p{
+    font-size: 8px !important;
+    gap: 1px;
+ }
+}
+</style>
 <body>
     <!-- head end-->
     <table class="head" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background: #fff; margin: 0;">
         <tr>
             <td>
                 <!-- head-container  end-->
-                <table class="head-container" width="600px" align="center" border="0" cellspacing="0" cellpadding="0" style="background: #fff; border: 3px solid red;">
+                <table class="container" width="600px" align="center" border="0" cellspacing="0" cellpadding="0" style="background: #fff;">
                     <tr>
                         <td>
                             <!-- header-logo  end-->
-                            <table class="header" width="600px" align="center" border="0" cellspacing="0" cellpadding="0" style="background: #fff;">
-                                <tr style="display: flex; justify-content: space-between;">
-                                    <td style="display: flex; justify-content: left; align-items: center; padding-left: 30px;">
+                            <table class="container" width="600px" align="center" border="0" cellspacing="0" cellpadding="0" style="background: #fff;">
+                                <tr class="logo" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <td style="display: flex; justify-content: flex-start; align-items: center; ">
                                         <img class="header-logo" src="https://i.postimg.cc/hPjCB2DY/airasia-logo.png" alt="airasia head logo" style="width: 100px;";>
                                     </td>
                                     <td>
-                                        <p class="header-p" style="display: flex; justify-content: right;align-items: center; padding-right: 20px; font-size: 20px;"> airasia Points Balance: 0</p>
+                                        <p class="header-p" style="display: flex; justify-content: flex-end; align-items: center; font-size: 20px;"> airasia Points Balance: 0</p>
                                     </td>
                                 </tr>
                             </table>
                             <!-- header-logo end-->
                             <!-- gif  end-->
-                            <table class="mega-gif" max-width="600px" align="center" border="0" cellspacing="0" cellpadding="0"  style="margin: 0;">
+                            <table class="container"  align="center" border="0" cellspacing="0" cellpadding="0" style="background: #fff;">
                                 <tr>
-                                    <td>
-                                        <img class="gif" src="https://i.postimg.cc/c4rcj6Ty/airasia.gif" alt="airasia gif" style="max-width: 600px;";>
+                                    <td class="gif-container" >
+                                        <img class="gif" src="https://i.postimg.cc/c4rcj6Ty/airasia.gif" alt="airasia gif" style="max-width: 100%;";>
                                     </td>                                    
                                 </tr>
                             </table>
                             <!-- gif end-->
                             <!-- book  end-->
-                            <table class="book" max-width="100%" align="center" border="0" cellspacing="0" cellpadding="0"  style="background: #ffebe6; margin: 0;">
+                            <table class="container"  align="center" border="0" cellspacing="0" cellpadding="0" style="background: #ffebe6; ">
                                 <tr>
                                     <td>
-                                        <h5 class="book-period" style="font-weight: 300; font-size: 20px; text-align: center; margin: 0;">
+                                        <h5 class="book-period" style="font-weight: 300; font-size: 20px; text-align: center; margin: 0; padding: 15px;">
                                             Booking Period: 13 Mar 2023 - 19 Mar 2023
                                         </h5>
                                     </td>                                    
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h5 class="book-travel" style="font-weight: 300; font-size: 20px; text-align: center; margin: 0;">
+                                        <h5 class="book-travel" style="font-weight: 300; font-size: 20px; text-align: center; margin: 0; padding: 15px;">
                                             Travel Period: 4 Sep 2023 - 9 July 2024 
                                         </h5>
                                     </td>                                    
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p style="text-align: center; padding: 40px;"><a class="book-btn" href="#" style="font-weight: 800; font-size: 18px; text-align: center; padding: 15px; border-radius: 50px; background-color: red; color: white; list-style: none; text-decoration: none;">BOOK NOW</a></p>
+                                        <p class="btn-red"style="text-align: center; padding: 20px;"><a class="book-btn" href="#" style="font-weight: 800; font-size: 18px; text-align: center; padding: 15px; border-radius: 50px; background-color: red; color: white; list-style: none; text-decoration: none;">BOOK NOW</a></p>
                                     </td>                                    
                                 </tr>
                                 <tr>
@@ -111,14 +151,44 @@
                             </table>
                             <!-- book end-->
                             <!-- header-logo  end-->
-                            <table class=" btns" width="600px" align="center" border="0" cellspacing="0" cellpadding="0">
+                            <table class="container"  align="center" border="0" cellspacing="0" cellpadding="0" style="background: #fff; margin: 0px;">
                                 <tr>
-                                    <td>
+                                    <td class="btns" >
                                         <img class="btns-footer" src="https://i.postimg.cc/254GwJG1/airaisia-footer.png" alt="btnsfooter" style="width: 100%;">
                                     </td>                                    
                                 </tr>
                             </table>
                             <!-- header-logo end-->
+                            <table class="container"  align="center" border="0" cellspacing="0" cellpadding="0" style="background: #fff;">
+                                <tr  class="footer">
+                                    <td style="padding-left: 10px;">
+                                        <img class="footer" src="https://i.postimg.cc/D0zc7zTG/footer-logo.png" alt="footer-IMG" style="width: 50%;">
+                                    </td>                                    
+                                    <td class="footer-p" style="display: flex; font-size: 10px; gap: 2px;">
+                                        <p style="border-right: 2px solid #000000; padding: 0 5px;">
+                                            <a href="#">Play</a>
+                                        </p>
+                                        <p style="border-right: 2px solid #000000; padding: 0 5px;">
+                                            <a href="#">My Bookings</a>
+                                        </p>
+                                        <p style="border-right: 2px solid #000000; padding: 0 5px;">
+                                            <a href="#">Check-in</a>
+                                        </p>
+                                        <p style="border-right: 2px solid #000000; padding: 0 5px;">
+                                            <a href="#">Flight Status</a>
+                                        </p>
+                                        <p>
+                                            <a href="#">Support 2023 Capital A Berhad</a>
+                                        </p>
+                                        
+                                    </td>
+                                    <td style="padding: 10px;">
+                                        <img src="https://i.postimg.cc/L8gNqhZB/facebook.png" alt="" style="width: 25px;">
+                                        <img src="https://i.postimg.cc/W3TnfnYX/instagram.png" alt="" style="width: 25px;">
+                                        <img src="https://i.postimg.cc/Tw098DZG/twitter.png" alt="" style="width: 25px;">
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
